@@ -1,0 +1,678 @@
+{
+  "bytes": 5182803,
+  "datahub": {
+    "created": "2018-01-30T06:21:24.427838",
+    "findability": "published",
+    "flowid": "core/co2-fossil-by-nation/25",
+    "modified": "2019-03-22T20:24:04.339950",
+    "owner": "core",
+    "ownerid": "core"
+  },
+  "hash": "164e6430d7c8efab1731dc9395b0b0b7",
+  "id": "core/co2-fossil-by-nation",
+  "licenses": [
+    {
+      "name": "ODC-PDDL-1.0",
+      "path": "http://opendatacommons.org/licenses/pddl/",
+      "title": "Open Data Commons Public Domain Dedication and License v1.0"
+    }
+  ],
+  "name": "co2-fossil-by-nation",
+  "resources": [
+    {
+      "bytes": 775915,
+      "datahub": {
+        "type": "original"
+      },
+      "dpp:streamedFrom": "https://s3.amazonaws.com/rawstore.datahub.io/04e27721500700ccce10d63501bde9bb.csv",
+      "encoding": "ISO-8859-1",
+      "format": "csv",
+      "mediatype": "text/csv",
+      "name": "fossil-fuel-co2-emissions-by-nation_original",
+      "path": "archive/fossil-fuel-co2-emissions-by-nation.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "schema": {
+        "fields": [
+          {
+            "description": "Year",
+            "name": "Year",
+            "type": "year"
+          },
+          {
+            "description": "Nation",
+            "name": "Country",
+            "type": "string"
+          },
+          {
+            "description": "Total carbon emissions from fossil fuel consumption and cement production (million metric tons of C)",
+            "name": "Total",
+            "type": "number"
+          },
+          {
+            "description": "Carbon emissions from solid fuel consumption",
+            "name": "Solid Fuel",
+            "type": "number"
+          },
+          {
+            "description": "Carbon emissions from liquid fuel consumption",
+            "name": "Liquid Fuel",
+            "type": "number"
+          },
+          {
+            "description": "Carbon emissions from gas fuel consumption",
+            "name": "Gas Fuel",
+            "type": "number"
+          },
+          {
+            "description": "Carbon emissions from cement production",
+            "name": "Cement",
+            "type": "number"
+          },
+          {
+            "description": "Carbon emissions from gas flaring",
+            "name": "Gas Flaring",
+            "type": "number"
+          },
+          {
+            "description": "Per capita carbon emissions (metric tons of carbon; after 1949 only)",
+            "name": "Per Capita",
+            "type": "number"
+          },
+          {
+            "description": "Carbon emissions from bunker fuels (not included in total)",
+            "name": "Bunker fuels (Not in Total)",
+            "type": "number"
+          }
+        ]
+      }
+    },
+    {
+      "bytes": 717,
+      "datahub": {
+        "type": "derived/report"
+      },
+      "description": "Validation report for tabular data",
+      "dpp:streamedFrom": "/tmp/tmp_uykkgzc/core/co2-fossil-by-nation/validation_report/data/e63e3c4092e8910ff667f5724035d7f4/validation_report.json",
+      "format": "json",
+      "hash": "e63e3c4092e8910ff667f5724035d7f4",
+      "name": "validation_report",
+      "path": "data/validation_report.json",
+      "profile": "data-resource"
+    },
+    {
+      "bytes": 775915,
+      "datahub": {
+        "derivedFrom": [
+          "fossil-fuel-co2-emissions-by-nation"
+        ],
+        "type": "derived/csv"
+      },
+      "dialect": {
+        "delimiter": ",",
+        "doubleQuote": true,
+        "lineTerminator": "\r\n",
+        "quoteChar": "\"",
+        "skipInitialSpace": false
+      },
+      "dpp:streamedFrom": "/tmp/tmp_uykkgzc/core/co2-fossil-by-nation/fossil-fuel-co2-emissions-by-nation_csv/data/0f04181960a0a896ebaf6d8afb0b71a6/fossil-fuel-co2-emissions-by-nation_csv.csv",
+      "encoding": "utf-8",
+      "format": "csv",
+      "hash": "0f04181960a0a896ebaf6d8afb0b71a6",
+      "mediatype": "text/csv",
+      "name": "fossil-fuel-co2-emissions-by-nation_csv",
+      "path": "data/fossil-fuel-co2-emissions-by-nation_csv.csv",
+      "pathType": "local",
+      "profile": "data-resource",
+      "rowcount": 17232,
+      "schema": {
+        "fields": [
+          {
+            "description": "Year",
+            "name": "Year",
+            "type": "year"
+          },
+          {
+            "description": "Nation",
+            "name": "Country",
+            "type": "string"
+          },
+          {
+            "decimalChar": ".",
+            "description": "Total carbon emissions from fossil fuel consumption and cement production (million metric tons of C)",
+            "groupChar": "",
+            "name": "Total",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "description": "Carbon emissions from solid fuel consumption",
+            "groupChar": "",
+            "name": "Solid Fuel",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "description": "Carbon emissions from liquid fuel consumption",
+            "groupChar": "",
+            "name": "Liquid Fuel",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "description": "Carbon emissions from gas fuel consumption",
+            "groupChar": "",
+            "name": "Gas Fuel",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "description": "Carbon emissions from cement production",
+            "groupChar": "",
+            "name": "Cement",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "description": "Carbon emissions from gas flaring",
+            "groupChar": "",
+            "name": "Gas Flaring",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "description": "Per capita carbon emissions (metric tons of carbon; after 1949 only)",
+            "groupChar": "",
+            "name": "Per Capita",
+            "type": "number"
+          },
+          {
+            "decimalChar": ".",
+            "description": "Carbon emissions from bunker fuels (not included in total)",
+            "groupChar": "",
+            "name": "Bunker fuels (Not in Total)",
+            "type": "number"
+          }
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 3629298,
+      "datahub": {
+        "derivedFrom": [
+          "fossil-fuel-co2-emissions-by-nation"
+        ],
+        "type": "derived/json"
+      },
+      "dpp:streamedFrom": "/tmp/tmp_uykkgzc/core/co2-fossil-by-nation/fossil-fuel-co2-emissions-by-nation_json/data/2b4874bb29c461a614e92773956ad573/fossil-fuel-co2-emissions-by-nation_json.json",
+      "encoding": "utf-8",
+      "format": "json",
+      "hash": "2b4874bb29c461a614e92773956ad573",
+      "mediatype": "text/csv",
+      "name": "fossil-fuel-co2-emissions-by-nation_json",
+      "path": "data/fossil-fuel-co2-emissions-by-nation_json.json",
+      "pathType": "local",
+      "profile": "data-resource",
+      "rowcount": 17232,
+      "schema": {
+        "fields": [
+          {
+            "description": "Year",
+            "name": "Year",
+            "type": "year"
+          },
+          {
+            "description": "Nation",
+            "name": "Country",
+            "type": "string"
+          },
+          {
+            "description": "Total carbon emissions from fossil fuel consumption and cement production (million metric tons of C)",
+            "name": "Total",
+            "type": "number"
+          },
+          {
+            "description": "Carbon emissions from solid fuel consumption",
+            "name": "Solid Fuel",
+            "type": "number"
+          },
+          {
+            "description": "Carbon emissions from liquid fuel consumption",
+            "name": "Liquid Fuel",
+            "type": "number"
+          },
+          {
+            "description": "Carbon emissions from gas fuel consumption",
+            "name": "Gas Fuel",
+            "type": "number"
+          },
+          {
+            "description": "Carbon emissions from cement production",
+            "name": "Cement",
+            "type": "number"
+          },
+          {
+            "description": "Carbon emissions from gas flaring",
+            "name": "Gas Flaring",
+            "type": "number"
+          },
+          {
+            "description": "Per capita carbon emissions (metric tons of carbon; after 1949 only)",
+            "name": "Per Capita",
+            "type": "number"
+          },
+          {
+            "description": "Carbon emissions from bunker fuels (not included in total)",
+            "name": "Bunker fuels (Not in Total)",
+            "type": "number"
+          }
+        ]
+      },
+      "signed": true
+    },
+    {
+      "bytes": 958,
+      "dpp:streamedFrom": "/tmp/tmp275zzt9o/README.md",
+      "format": "md",
+      "name": "readme",
+      "path": "README.md"
+    }
+  ],
+  "sources": [
+    {
+      "name": "CDIAC",
+      "path": "http://cdiac.esd.ornl.gov/ftp/ndp030/CSV-FILES/nation.1751_2011.csv",
+      "title": "CO2 Emissions from Fossil Fuels since 1751, By Nation"
+    }
+  ],
+  "title": "CO2 Emissions from Fossil Fuels since 1751, By Nation",
+  "views": [
+    {
+      "name": "carbon-emissions-2014",
+      "resources": [
+        {
+          "name": "fossil-fuel-co2-emissions-by-nation",
+          "transform": [
+            {
+              "expression": "data['Year'] == 2014",
+              "type": "filter"
+            },
+            {
+              "expression": "data['Total'] > 50000",
+              "type": "filter"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "$schema": "https://vega.github.io/schema/vega/v4.json",
+        "axes": [
+          {
+            "labelPadding": 4,
+            "orient": "left",
+            "scale": "yscale",
+            "tickSize": 0,
+            "zindex": 1
+          },
+          {
+            "orient": "bottom",
+            "scale": "xscale"
+          }
+        ],
+        "data": [
+          {
+            "name": "fossil-fuel-co2-emissions-by-nation"
+          }
+        ],
+        "height": 550,
+        "marks": [
+          {
+            "encode": {
+              "enter": {
+                "y": {
+                  "field": "Country",
+                  "scale": "yscale"
+                }
+              }
+            },
+            "from": {
+              "facet": {
+                "data": "fossil-fuel-co2-emissions-by-nation",
+                "groupby": "Country",
+                "name": "facet"
+              }
+            },
+            "marks": [
+              {
+                "encode": {
+                  "enter": {
+                    "height": {
+                      "band": 1,
+                      "scale": "pos"
+                    },
+                    "x": {
+                      "field": "Total",
+                      "scale": "xscale"
+                    },
+                    "x2": {
+                      "scale": "xscale",
+                      "value": 0
+                    },
+                    "y": {
+                      "field": "position",
+                      "scale": "pos"
+                    }
+                  }
+                },
+                "from": {
+                  "data": "facet"
+                },
+                "name": "bars",
+                "type": "rect"
+              },
+              {
+                "encode": {
+                  "enter": {
+                    "align": {
+                      "value": "right"
+                    },
+                    "baseline": {
+                      "value": "middle"
+                    },
+                    "fill": {
+                      "value": "white"
+                    },
+                    "x": {
+                      "field": "x2",
+                      "offset": -5
+                    },
+                    "y": {
+                      "field": "y",
+                      "offset": {
+                        "field": "height",
+                        "mult": 0.5
+                      }
+                    }
+                  }
+                },
+                "from": {
+                  "data": "bars"
+                },
+                "type": "text"
+              }
+            ],
+            "scales": [
+              {
+                "domain": {
+                  "data": "facet",
+                  "field": "position"
+                },
+                "name": "pos",
+                "range": "height",
+                "type": "band"
+              }
+            ],
+            "signals": [
+              {
+                "name": "height",
+                "update": "bandwidth('yscale')"
+              }
+            ],
+            "type": "group"
+          }
+        ],
+        "padding": 5,
+        "scales": [
+          {
+            "domain": {
+              "data": "fossil-fuel-co2-emissions-by-nation",
+              "field": "Country",
+              "sort": {
+                "field": "Total",
+                "op": "max"
+              }
+            },
+            "name": "yscale",
+            "padding": 0.01,
+            "range": "height",
+            "type": "band"
+          },
+          {
+            "domain": {
+              "data": "fossil-fuel-co2-emissions-by-nation",
+              "field": "Total"
+            },
+            "name": "xscale",
+            "nice": true,
+            "range": "width",
+            "round": true,
+            "type": "linear",
+            "zero": true
+          }
+        ],
+        "title": "Countries by carbon emission in 2014 (with >50,000). Values are thousands metric tons of C.",
+        "width": 700
+      },
+      "specType": "vega",
+      "title": "Countries by carbon emission in 2014 (with >50,000). Values are thousands metric tons of C."
+    },
+    {
+      "name": "carbon-emission-by-china",
+      "resources": [
+        {
+          "name": "fossil-fuel-co2-emissions-by-nation",
+          "transform": [
+            {
+              "expression": "data['Country'] == 'CHINA (MAINLAND)'",
+              "type": "filter"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "group": "Year",
+        "series": [
+          "Total"
+        ],
+        "type": "line",
+        "yTitle": "million metric tons of C"
+      },
+      "specType": "simple",
+      "title": "Carbon emission by China (Mainland)"
+    },
+    {
+      "name": "carbon-emission-by-usa",
+      "resources": [
+        {
+          "name": "fossil-fuel-co2-emissions-by-nation",
+          "transform": [
+            {
+              "expression": "data['Country'] == 'UNITED STATES OF AMERICA'",
+              "type": "filter"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "group": "Year",
+        "series": [
+          "Total"
+        ],
+        "type": "line",
+        "yTitle": "million metric tons of C"
+      },
+      "specType": "simple",
+      "title": "Carbon emission by USA"
+    },
+    {
+      "name": "carbon-emission-per-capita-2014",
+      "resources": [
+        {
+          "name": "fossil-fuel-co2-emissions-by-nation",
+          "transform": [
+            {
+              "expression": "data['Year'] == 2014",
+              "type": "filter"
+            },
+            {
+              "expression": "data['Per Capita'] > 2.0",
+              "type": "filter"
+            }
+          ]
+        }
+      ],
+      "spec": {
+        "$schema": "https://vega.github.io/schema/vega/v4.json",
+        "axes": [
+          {
+            "labelPadding": 4,
+            "orient": "left",
+            "scale": "yscale",
+            "tickSize": 0,
+            "zindex": 1
+          },
+          {
+            "orient": "bottom",
+            "scale": "xscale"
+          }
+        ],
+        "data": [
+          {
+            "name": "fossil-fuel-co2-emissions-by-nation"
+          }
+        ],
+        "height": 700,
+        "marks": [
+          {
+            "encode": {
+              "enter": {
+                "y": {
+                  "field": "Country",
+                  "scale": "yscale"
+                }
+              }
+            },
+            "from": {
+              "facet": {
+                "data": "fossil-fuel-co2-emissions-by-nation",
+                "groupby": "Country",
+                "name": "facet"
+              }
+            },
+            "marks": [
+              {
+                "encode": {
+                  "enter": {
+                    "height": {
+                      "band": 1,
+                      "scale": "pos"
+                    },
+                    "x": {
+                      "field": "Per Capita",
+                      "scale": "xscale"
+                    },
+                    "x2": {
+                      "scale": "xscale",
+                      "value": 0
+                    },
+                    "y": {
+                      "field": "position",
+                      "scale": "pos"
+                    }
+                  }
+                },
+                "from": {
+                  "data": "facet"
+                },
+                "name": "bars",
+                "type": "rect"
+              },
+              {
+                "encode": {
+                  "enter": {
+                    "align": {
+                      "value": "right"
+                    },
+                    "baseline": {
+                      "value": "middle"
+                    },
+                    "fill": {
+                      "value": "white"
+                    },
+                    "x": {
+                      "field": "x2",
+                      "offset": -5
+                    },
+                    "y": {
+                      "field": "y",
+                      "offset": {
+                        "field": "height",
+                        "mult": 0.5
+                      }
+                    }
+                  }
+                },
+                "from": {
+                  "data": "bars"
+                },
+                "type": "text"
+              }
+            ],
+            "scales": [
+              {
+                "domain": {
+                  "data": "facet",
+                  "field": "position"
+                },
+                "name": "pos",
+                "range": "height",
+                "type": "band"
+              }
+            ],
+            "signals": [
+              {
+                "name": "height",
+                "update": "bandwidth('yscale')"
+              }
+            ],
+            "type": "group"
+          }
+        ],
+        "padding": 5,
+        "scales": [
+          {
+            "domain": {
+              "data": "fossil-fuel-co2-emissions-by-nation",
+              "field": "Country",
+              "sort": {
+                "field": "Per Capita",
+                "op": "max"
+              }
+            },
+            "name": "yscale",
+            "padding": 0.01,
+            "range": "height",
+            "type": "band"
+          },
+          {
+            "domain": {
+              "data": "fossil-fuel-co2-emissions-by-nation",
+              "field": "Per Capita"
+            },
+            "name": "xscale",
+            "nice": true,
+            "range": "width",
+            "round": true,
+            "type": "linear",
+            "zero": true
+          }
+        ],
+        "title": "Carbon emission per capita in 2014 (>2.0). Values are metric tonnes of C.",
+        "width": 700
+      },
+      "specType": "vega",
+      "title": "Carbon emission per capita in 2014 (>2.0). Values are metric tonnes of C."
+    }
+  ]
+}
